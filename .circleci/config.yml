@@ -14,7 +14,7 @@ jobs:
             echo "REPO=$REPO" >> $BASH_ENV
             GITCOMMIT=${CIRCLE_SHA1::7}
             NOW=$(date +%Y%m%d-%H%M)
-            FULLNAME="$REPO:$NOW-$GITCOMMIT
+            FULLNAME="$REPO:$NOW-$GITCOMMIT"
             echo "FULLNAME=$FULLNAME" >> $BASH_ENV
             echo "Branch $CIRCLE_BRANCH"
             echo "Using full name $FULLNAME"
